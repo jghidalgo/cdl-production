@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Complete Dental Lab</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="views/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="views/assets/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom Font Icons CSS-->
+    <link rel="stylesheet" href="views/assets/css/font.css">
+    <!-- Google fonts - Muli-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="views/assets/css/style.red.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="views/assets/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="views/assets/img/favicon.ico">
+    
+    <script type="text/javascript">
+      function submit()
+      {
+           // alert("OK");
+           document.getElementById("login-form").submit();
+      }
+    </script>
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+        <style type="text/css">
+          .maxl{
+  margin:10px ;
+}
+.inline{
+  display: inline-block;
+}
+.inline + .inline{
+  margin-left:5px;
+
+}
+.radio{
+  color:#999;
+  font-size:15px;
+  position:relative;
+}
+.radio span{
+  position:relative;
+   padding-left:20px;
+}
+.radio span:after{
+  content:'';
+  width:15px;
+  height:15px;
+  border:3px solid;
+  position:absolute;
+  left:0;
+  top:1px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.radio input[type="radio"]{
+   cursor: pointer; 
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+.radio input[type="radio"]:checked + span{
+  color:#fdb813;  
+}
+.radio input[type="radio"]:checked + span:before{
+    content:'';
+  width:5px;
+  height:5px;
+  position:absolute;
+  background:#fdb813;
+  left:5px;
+  top:6px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+}
+        </style>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="container d-flex align-items-center">
+        <div class="form-holder has-shadow">
+          <div class="row">
+            <!-- Logo & Information Panel-->
+            <div class="col-lg-6">
+              <div class="info d-flex align-items-center" style="opacity: 0.8 !important;">
+                <div class="content">
+                  <div class="logo" >
+                    <h1><img src="views/assets/dist/img/logo.png"></h1>
+                  </div>
+                  <!--p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p-->
+                </div>
+              </div>
+            </div>
+            <!-- Form Panel    -->
+            <div class="col-lg-6">
+              <div class="form d-flex align-items-center" style="opacity: 0.8 !important;">
+                <div class="content">
+                  <form id="login-form" method="post" action="controllers/login.php">
+                    <div class="row">
+                    <div class="form-group">
+                      <input id="login-username" type="text" name="loginUsername" required="" class="input-material">
+                      <label for="login-username" class="label-material">User Name</label>
+                    </div>
+                    <div class="form-group">
+                      <input id="login-password" type="password" name="loginPassword" required="" class="input-material">
+                      <label for="login-password" class="label-material">Password</label>
+                    </div>
+                  </div>
+                    <div class="row" >
+                    <div class="col-xs-6"> 
+                    <a id="login" onclick="submit()" class="btn btn-primary" style="opacity: 0.8 !important;">Login</a>
+                  </div>
+                   <div class="col-xs-6"> 
+                    <div class="maxl" >
+  <label class="radio inline"> 
+      <input type="radio" name="lang" value="en" checked>
+      <span> EN </span> 
+   </label>
+  <label class="radio inline"> 
+      <input type="radio" name="lang" value="es">
+      <span>ES </span> 
+  </label>
+</div></div>
+                   </div>
+                    <!-- This should be submit button but I replaced it with <a> for demo purposes-->
+                  </form><!--a href="#" class="forgot-pass">Forgot Password?</a><br><small>Do not have an account? </small><a href="register.html" class="signup">Signup</a-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights text-center">
+        <p>Copyright 2017 <a href="https://bootstrapious.com" class="external">Complete Dental Lab</a></p>
+        <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+      </div>
+    </div>
+    <!-- Javascript files-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
+    <script src="views/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="views/assets/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="views/assets/vendor/chart.js/Chart.min.js"></script>
+    <script src="views/assets/js/front.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var itaImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Italien.gif";
+      var engImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Grossbritanien.gif";
+    var deuImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Deutschland.gif";
+    var fraImgLink = "http://www.roemheld.de/IT/Data/Images/Address/Frankreich.gif";
+
+    var imgBtnSel = $('#imgBtnSel');
+    var imgBtnIta = $('#imgBtnIta');
+    var imgBtnEng = $('#imgBtnEng');
+    var imgBtnDeu = $('#imgBtnDeu');
+    var imgBtnFra = $('#imgBtnFra');
+
+    var imgNavSel = $('#imgNavSel');
+    var imgNavIta = $('#imgNavIta');
+    var imgNavEng = $('#imgNavEng');
+    var imgNavDeu = $('#imgNavDeu');
+    var imgNavFra = $('#imgNavFra');
+
+    var spanNavSel = $('#lanNavSel');
+    var spanBtnSel = $('#lanBtnSel');
+
+    imgBtnSel.attr("src",itaImgLink);
+    imgBtnIta.attr("src",itaImgLink);
+    imgBtnEng.attr("src",engImgLink);
+    imgBtnDeu.attr("src",deuImgLink);
+    imgBtnFra.attr("src",fraImgLink);
+
+    imgNavSel.attr("src",itaImgLink);
+    imgNavIta.attr("src",itaImgLink);
+    imgNavEng.attr("src",engImgLink);
+    imgNavDeu.attr("src",deuImgLink);
+    imgNavFra.attr("src",fraImgLink);
+
+    $( ".language" ).on( "click", function( event ) {
+      var currentId = $(this).attr('id');
+
+      if(currentId == "navIta") {
+        imgNavSel.attr("src",itaImgLink);
+        spanNavSel.text("ITA");
+      } else if (currentId == "navEng") {
+        imgNavSel.attr("src",engImgLink);
+        spanNavSel.text("ENG");
+      } else if (currentId == "navDeu") {
+        imgNavSel.attr("src",deuImgLink);
+        spanNavSel.text("DEU");
+      } else if (currentId == "navFra") {
+        imgNavSel.attr("src",fraImgLink);
+        spanNavSel.text("FRA");
+      }
+
+      if(currentId == "btnIta") {
+        imgBtnSel.attr("src",itaImgLink);
+        spanBtnSel.text("ITA");
+      } else if (currentId == "btnEng") {
+        imgBtnSel.attr("src",engImgLink);
+        spanBtnSel.text("ENG");
+      } else if (currentId == "btnDeu") {
+        imgBtnSel.attr("src",deuImgLink);
+        spanBtnSel.text("DEU");
+      } else if (currentId == "btnFra") {
+        imgBtnSel.attr("src",fraImgLink);
+        spanBtnSel.text("FRA");
+      }
+      
+    });
+});
+      $(window).bind('keydown', function(e) {            
+  if (e.charCode == 13 || e.keyCode == 13) {//ENTER
+    document.getElementById("login-form").submit();
+  }    
+});
+    </script>
+  </body>
+</html>
